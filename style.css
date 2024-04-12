@@ -1,0 +1,113 @@
+
+
+.imgpc{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    /* background-image: url('img/pc2.png'); */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+    margin: 10px;
+    margin-left: 37px;
+    display: inline-block;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 80px;
+    vertical-align: middle;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #c7c7c7;
+    color: rgb(42, 40, 40);
+    padding: 12px;
+    border-radius: 5px;
+    width: 200px;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+    pointer-events: none;
+    font-size: 16px;
+    white-space: break-word;
+    line-height: 1.4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    opacity: 0.95;
+}
+
+.tooltip::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border-width: 8px;
+    border-style: solid;
+    border-color: #c7c7c7 transparent transparent transparent;
+    transform: translateX(-50%);
+}
+
+.tooltip-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.imgpc:hover .tooltip {
+    display: block;
+}
+
+.btnGenerar{
+    height: 25px;
+    width:150px;
+    border-radius: 5px;
+    background-color: rgb(19, 172, 19);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.imgTable {
+
+    background-image: url("img/escritorio1.png");
+    background-size: cover;
+    height: 310px;
+    width: 600px;
+    box-sizing: border-box;
+    margin: 40px;
+    margin-left: 80px;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px;
+    vertical-align: middle;
+
+} 
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
